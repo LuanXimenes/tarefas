@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let categoria = prompt("Digite a categoria da carteira de motorista (A, B, C, D ou E):");
+
+let veiculo;
+
+if (categoria === "A" || categoria === "a") {
+    veiculo = "Motos e triciclos";
+} else if (categoria === "B" || categoria === "b") {
+    veiculo = "Carros de passeio";
+} else if (categoria === "C" || categoria === "c") {
+    veiculo = "Veículos de carga acima de 3,5 toneladas";
+} else if (categoria === "D" || categoria === "d") {
+    veiculo = "Veículos com mais de 8 passageiros";
+} else if (categoria === "E" || categoria === "e") {
+    veiculo = "Veículos com unidade acoplada acima de 6 toneladas";
+} else {
+    alert("Categoria inválida");
+}
+
+if (veiculo) {
+    alert("Você pode dirigir: " + veiculo);
+}
+
+    </script>
+</body>
+</html>

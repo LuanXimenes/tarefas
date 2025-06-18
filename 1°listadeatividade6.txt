@@ -1,0 +1,17 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let v = Number(prompt("Digite o valor do produto"))
+        let p = Number(prompt("Digite o valor pago"))
+
+        alert ("O troco a se receber é " + (v-p) + " reais")
+    </script>
+</body>
+</html>

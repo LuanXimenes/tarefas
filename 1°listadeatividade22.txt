@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let a = Number(prompt("Digite a altura da parede"))
+        let l = Number(prompt("Digite a largura da parede"))
+
+        alert ("serão necessárias " + (a*l/12) + " latas de tinta")
+
+    </script>
+</body>
+</html>

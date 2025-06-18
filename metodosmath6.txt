@@ -1,0 +1,17 @@
+const numero = parseFloat(prompt("Digite um número decimal:"));
+
+const arredondado = Math.round(numero);
+const paraCima = Math.ceil(numero);
+const paraBaixo = Math.floor(numero);
+const truncado = Math.trunc(numero);
+
+console.log(`Número original: ${numero}`);
+console.log(`Arredondamento tradicional (Math.round): ${arredondado}`);
+console.log(`Arredondamento para cima (Math.ceil): ${paraCima}`);
+console.log(`Arredondamento para baixo (Math.floor): ${paraBaixo}`);
+console.log(`Truncamento da parte decimal (Math.trunc): ${truncado}`);
+
+//Math.round(): útil quando você precisa do valor inteiro mais próximo (ex: arredondar notas ou médias).
+//Math.ceil(): ideal quando você nunca pode subestimar (ex: cálculo de parcelas mínimas ou andares).
+//Math.floor(): ideal quando você nunca pode superestimar (ex: limites inferiores, descontos).
+//Math.trunc(): útil quando só precisa da parte inteira e não quer arredondar (ex: separar casas decimais).

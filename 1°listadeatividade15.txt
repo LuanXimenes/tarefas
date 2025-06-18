@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let v = Number(prompt("Digite o valor a se pagar"))
+        let g = Number(prompt("Digite a porcentagem da gorjeta"))
+
+        alert ("O valor da gorjeta é de " + (v*(g/100)) + " reais")
+        alert ("o valor total a se pagar e de " + (v+(v*(g/100))))
+    </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+function calcularMedia(n1, n2, n3) {
+  const media = (n1 + n2 + n3) / 3;
+  return Math.round(media);
+}
+
+const nota1 = parseFloat(prompt("Digite a primeira nota:"));
+const nota2 = parseFloat(prompt("Digite a segunda nota:"));
+const nota3 = parseFloat(prompt("Digite a terceira nota:"));
+
+const mediaFinal = calcularMedia(nota1, nota2, nota3);
+console.log(`A média arredondada é: ${mediaFinal}`);

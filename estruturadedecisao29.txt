@@ -1,0 +1,63 @@
+#include <stdio.h>
+
+int main() {
+    int codigo;
+    float pagamento;
+
+    printf("Digite o codigo do empregado (1-gerente, 2-comum, 3-comissao, 4-empreitada): ");
+    scanf("%d", &codigo);
+
+    switch (codigo) {
+        case 1: {
+            float salarioMensal;
+            printf("Digite o salario mensal do gerente: R$ ");
+            scanf("%f", &salarioMensal);
+            pagamento = salarioMensal / 4.0;
+            printf("Pagamento semanal do gerente: R$ %.2f\n", pagamento);
+            break;
+        }
+        case 2: {
+            float salarioHora, horasTrabalhadas, horasExtras, valorHoraExtra;
+            printf("Digite o salario por hora R$ ");
+            scanf("%f", &salarioHora);
+            printf("Digite o total de horas trabalhadas na semana ");
+            scanf("%f", &horasTrabalhadas);
+
+            if (horasTrabalhadas > 40) {
+                horasExtras = horasTrabalhadas - 40;
+            } else {
+                horasExtras = 0;
+            }
+            valorHoraExtra = salarioHora * 1.5;
+
+            pagamento = (40 * salarioHora) + (horasExtras * valorHoraExtra);
+            printf("Pagamento semanal do trabalhador comum: R$ %.2f\n", pagamento);
+            break;
+        }
+        case 3: {
+            float vendasBrutas;
+            printf("Digite o valor das vendas brutas da semana: R$ ");
+            scanf("%f", &vendasBrutas);
+
+            pagamento = 250.0 + (vendasBrutas * 0.057);
+            printf("Pagamento semanal do trabalhador por comissao: R$ %.2f\n", pagamento);
+            break;
+        }
+        case 4: {
+            int itensProduzidos;
+            float valorPorItem;
+            printf("Digite a quantidade de itens produzidos ");
+            scanf("%d", &itensProduzidos);
+            printf("Digite o valor pago por item: R$ ");
+            scanf("%f", &valorPorItem);
+
+            pagamento = itensProduzidos * valorPorItem;
+            printf("Pagamento semanal do trabalhador por empreitada: R$ %.2f\n", pagamento);
+            break;
+        }
+        default:
+            printf("Codigo invalido!\n");
+    }
+
+    return 0;
+}

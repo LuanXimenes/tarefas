@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let velocidadeMaxima = parseInt(prompt("Digite a velocidade máxima da avenida (km/h):"));
+    let velocidadeMotorista = parseInt(prompt("Digite a velocidade do motorista (km/h):"));
+    
+    if (velocidadeMotorista > velocidadeMaxima) {
+        let excesso = velocidadeMotorista - velocidadeMaxima;
+        let multa = excesso * 5;
+        
+        alert("Você ultrapassou o limite de velocidade em " + excesso + " km/h.\nMulta: R$ " + multa);
+} else {
+    alert("Velocidade dentro do limite. Não há multa.");
+}
+
+    </script>
+</body>
+</html>

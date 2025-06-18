@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tarefa</title>
+</head>
+<body>
+    <script>
+
+        let x = (prompt("Digite o primeiro número"))
+
+        let y = (prompt("Digite o segundo número"))
+
+        let = x*y
+
+        alert ("seu número é " + x*y)
+    </script>
+</body>
+</html>

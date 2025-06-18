@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let p = Number(prompt("Digite o valor da compra"))
+
+        if (p>200)
+        alert ("O valor total a se pagar e de " + (p-(p*0.05)) + " reais")
+
+        else
+        alert ("O valor a se pagar e de " + (p) + " reais")
+
+    </script>
+</body>
+</html>

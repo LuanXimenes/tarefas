@@ -1,0 +1,16 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let g = Number(prompt("Digite quantos litros deseja abastecer"))
+
+        alert ("O valor a se pagar é de " + (g*5.60) + " reais")
+    </script>
+</body>
+</html>

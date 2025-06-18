@@ -1,0 +1,17 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let l = Number(prompt("Digite a largura do terreno"))
+        let a = Number(prompt("Digite a altura do terreno"))
+
+        alert ("A área do terreno é " + (l*a) + " metros")
+    </script>
+</body>
+</html>

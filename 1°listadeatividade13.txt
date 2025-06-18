@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let v = Number(prompt("Digite o valor a se pagar"))
+        let p = Number(prompt("Digite o número de parcelas"))
+
+        alert ("O valor de cada parcela será de " + (v/p) + " reais")
+    </script>
+</body>
+</html>

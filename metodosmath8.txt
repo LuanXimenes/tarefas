@@ -1,0 +1,10 @@
+function converterCelsiusParaKelvin(celsius) {
+  const kelvin = celsius + 273.15;
+  const kelvinPrecisaoSimples = Math.fround(kelvin);
+  return kelvinPrecisaoSimples;
+}
+
+const celsius = parseFloat(prompt("Digite a temperatura em graus Celsius:"));
+const resultado = converterCelsiusParaKelvin(celsius);
+
+console.log(`Temperatura em Kelvin (precisão simples): ${resultado}`);

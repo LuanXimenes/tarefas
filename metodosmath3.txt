@@ -1,0 +1,10 @@
+function calcularPotencia(base, expoente) {
+  const resultado = Math.pow(base, expoente);
+  return resultado.toFixed(2);
+}
+
+const base = parseFloat(prompt("Digite a base:"));
+const expoente = parseFloat(prompt("Digite o expoente:"));
+
+const resultado = calcularPotencia(base, expoente);
+console.log(`Resultado: ${base} ^ ${expoente} = ${resultado}`);

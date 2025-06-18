@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numero1 = parseFloat(prompt("Digite o primeiro número "));
+let numero2 = parseFloat(prompt("Digite o segundo número "));
+
+let operacao = prompt("Escolha a operação:\n" + "1 - Adição\n" + "2 - Subtração\n" + "3 - Multiplicação\n" + "4 - Divisão");
+
+let resultado;
+
+if (operacao === "1") {
+    resultado = numero1 + numero2;
+    alert(resultado);
+} else if (operacao === "2") {
+    resultado = numero1 - numero2;
+    alert(resultado);
+} else if (operacao === "3") {
+    resultado = numero1 * numero2;
+    alert(resultado);
+} else if (operacao === "4") {
+    if (numero2 !== 0) {
+        resultado = numero1 / numero2;
+        alert(resultado);
+    } else {
+        alert("Erro: Divisão por zero não é permitida.");
+    }
+} else {
+    alert("Operação inválida");
+}
+
+    </script>
+</body>
+</html>

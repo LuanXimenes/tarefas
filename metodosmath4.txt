@@ -1,0 +1,16 @@
+const numeroSorteado = Math.floor(Math.random() * 100) + 1;
+let palpite = null;
+
+while (palpite !== numeroSorteado) {
+  palpite = parseInt(prompt("Tente adivinhar o número (entre 1 e 100):"));
+
+  if (isNaN(palpite)) {
+    alert("Por favor, digite um número válido.");
+  } else if (palpite < numeroSorteado) {
+    alert("Muito baixo! Tente novamente.");
+  } else if (palpite > numeroSorteado) {
+    alert("Muito alto! Tente novamente.");
+  } else {
+    alert(`Parabéns! Você acertou. O número era ${numeroSorteado}.`);
+  }
+}

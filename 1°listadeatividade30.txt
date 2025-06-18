@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let p = Number(prompt("Digite por quantos meses pretende usar o plano da academia"))
+
+        if (p<12)
+        alert ("O valor a se pagar e de " + (p*150.00) + " reais")
+
+        else
+        alert ("O valor a se pagar e de " + (150.00*p*0.85) + " reais")
+
+    </script>
+</body>
+</html>

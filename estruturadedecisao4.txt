@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let n1 = parseFloat(prompt("Digite a primeira nota "));
+    let n2 = parseFloat(prompt("Digite a segunda nota "));
+    
+    let media = (n1+n2)/2;
+    
+    if (media>=70) {
+    alert("aprovado");} 
+    else if (media>=40 && media<70) {
+            
+    let notaExame = parseFloat(prompt("Digite a nota do exame "));
+    let mediaFinal = (media+notaExame);
+            
+    if (mediaFinal>=100) {
+    alert("aprovado");} 
+                
+    else {
+    alert("reprovado");}
+} 
+    else {
+    alert("reprovado");
+}
+</script>
+</body>
+</html>

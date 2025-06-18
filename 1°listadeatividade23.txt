@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let h = Number(prompt("Digite quantos hambúrgueres vai pedir"))
+        let b = Number(prompt("Digite quantas batatas vai pedir"))
+
+        if (h>3)
+        alert ("O valor com desconto e de " + ((h*12.00+b*7.00)-((h*12.00+b*7.00)/100)*10) + " reais")
+
+        else
+        alert ("O valor a se pagar e de " + (h*12.00+b*7.00) + " reais")
+
+    </script>
+</body>
+</html>

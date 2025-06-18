@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    int golsTime1_real, golsTime2_real;
+    int golsTime1_apostado, golsTime2_apostado;
+    int pontos = 0;
+
+    printf("Digite o placar real (gols do Time1 e Time2): ");
+    scanf("%d %d", &golsTime1_real, &golsTime2_real);
+
+    printf("Digite o placar apostado (gols do Time1 e Time2): ");
+    scanf("%d %d", &golsTime1_apostado, &golsTime2_apostado);
+
+    if ((golsTime1_real > golsTime2_real && golsTime1_apostado > golsTime2_apostado) ||
+        (golsTime1_real < golsTime2_real && golsTime1_apostado < golsTime2_apostado) ||
+        (golsTime1_real == golsTime2_real && golsTime1_apostado == golsTime2_apostado)) {
+        pontos += 10;
+    }
+
+    if (golsTime1_real == golsTime1_apostado) {
+        pontos += 5;
+    }
+
+    if (golsTime2_real == golsTime2_apostado) {
+        pontos += 5;
+    }
+
+    printf("Total de pontos: %d\n", pontos);
+
+    return 0;
+}

@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+    float precoEtiqueta, valorFinal;
+    int codigoPagamento;
+
+    printf("Digite o preco de etiqueta do produto: ");
+    scanf("%f", &precoEtiqueta);
+
+    printf("Digite o codigo da condicao de pagamento (1 a 4): ");
+    scanf("%d", &codigoPagamento);
+
+    if (codigoPagamento == 1) {
+        valorFinal = precoEtiqueta * 0.90;
+        printf("Pagamento a vista em dinheiro/cheque. Desconto de 10%%.\n");
+    } else if (codigoPagamento == 2) {
+        valorFinal = precoEtiqueta * 0.95;
+        printf("Pagamento a vista no cartao. Desconto de 5%%.\n");
+    } else if (codigoPagamento == 3) {
+        valorFinal = precoEtiqueta;
+        printf("Pagamento em 2 vezes. Sem desconto ou acrescimo.\n");
+    } else if (codigoPagamento == 4) {
+        valorFinal = precoEtiqueta * 1.10;
+        printf("Pagamento em 3 vezes. Acrescimo de 10%%.\n");
+    } else {
+        printf("Codigo de condicao de pagamento invalido.\n");
+        return 1;
+    }
+
+    printf("Valor final a pagar: R$ %.2f\n", valorFinal);
+
+    return 0;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let codigo = prompt("Digite o código do funcionário (1-5) ");
+let salario = parseFloat(prompt("Digite o salário atual do funcionário "));
+
+let cargo, aumento, novoSalario;
+
+if (codigo == 1) {
+    cargo = "escrituário";
+    aumento = salario * 0.50;
+    novoSalario = salario + aumento;
+} else if (codigo == 2) {
+    cargo = "secretário";
+    aumento = salario * 0.35;
+    novoSalario = salario + aumento;
+} else if (codigo == 3) {
+    cargo = "caixa";
+    aumento = salario * 0.20;
+    novoSalario = salario + aumento;
+} else if (codigo == 4) {
+    cargo = "gerente";
+    aumento = salario * 0.10;
+    novoSalario = salario + aumento;
+} else (codigo == 5) ;{
+    cargo = "diretor";
+    aumento = 0;
+    novoSalario = salario;
+}
+if (codigo >= 1 && codigo <= 5) {
+    alert("Cargo: " + cargo + "\nAumento: R$ " + aumento.toFixed(2) + "\nNovo Salário: R$ " + novoSalario.toFixed(2));
+}
+    </script>
+</body>
+</html>

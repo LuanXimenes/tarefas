@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let valor = parseInt(prompt("Digite o valor em reais "));
+
+let notas100 = 0;
+let notas50 = 0;
+let notas20 = 0;
+let notas10 = 0;
+let notas5 = 0;
+let notas2 = 0;
+let notas1 = 0;
+
+
+if (valor >= 100) {
+  notas100 = Math.floor(valor / 100);
+  valor = valor % 100;
+}
+
+if (valor >= 50) {
+  notas50 = Math.floor(valor / 50);
+  valor = valor % 50;
+}
+
+if (valor >= 20) {
+  notas20 = Math.floor(valor / 20);
+  valor = valor % 20;
+}
+
+if (valor >= 10) {
+  notas10 = Math.floor(valor / 10);
+  valor = valor % 10;
+}
+
+if (valor >= 5) {
+  notas5 = Math.floor(valor / 5);
+  valor = valor % 5;
+}
+
+if (valor >= 2) {
+  notas2 = Math.floor(valor / 2);
+  valor = valor % 2;
+}
+
+if (valor >= 1) {
+  notas1 = valor;
+}
+
+let mensagem = "Cédulas fornecidas:\n";
+if (notas100 > 0) mensagem += notas100 + " cédula(s) de R$ 100\n";
+if (notas50 > 0) mensagem += notas50 + " cédula(s) de R$ 50\n";
+if (notas20 > 0) mensagem += notas20 + " cédula(s) de R$ 20\n";
+if (notas10 > 0) mensagem += notas10 + " cédula(s) de R$ 10\n";
+if (notas5 > 0) mensagem += notas5 + " cédula(s) de R$ 5\n";
+if (notas2 > 0) mensagem += notas2 + " cédula(s) de R$ 2\n";
+if (notas1 > 0) mensagem += notas1 + " cédula(s) de R$ 1\n";
+
+alert(mensagem);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let c = Number(prompt("Digite o consumo"))
+
+        if (c<=10)
+        alert ("O valor a se pagar e de " + (30) + " reais")
+
+        else
+        alert ("O valor a se pagar e de " + (30+(c-10)*3.5))
+
+    </script>
+</body>
+</html>

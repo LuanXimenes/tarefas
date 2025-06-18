@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let horasTrabalhadas = parseFloat(prompt("Digite o número de horas trabalhadas na semana:"));
+let valorHora = parseFloat(prompt("Digite o valor da hora:"));
+
+let salario = 0;
+
+if (horasTrabalhadas <= 40) {
+
+  salario = horasTrabalhadas * valorHora;
+} else if (horasTrabalhadas <= 60) {
+
+  let horasExtras = horasTrabalhadas - 40;
+  salario = (40 * valorHora) + (horasExtras * valorHora * 1.5);
+} else {
+
+  let horas50 = 20;
+  let horas100 = horasTrabalhadas - 60;
+  salario = (40 * valorHora) + (horas50 * valorHora * 1.5) + (horas100 * valorHora * 2);
+}
+
+alert("O salário semanal é: R$ " + salario.toFixed(2));
+
+    </script>
+</body>
+</html>

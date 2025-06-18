@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numero = parseInt(prompt("Digite um número de 1 a 7:"));
+
+let dia;
+
+if (numero === 1) {
+    dia = "Domingo";
+} else if (numero === 2) {
+    dia = "Segunda-feira";
+} else if (numero === 3) {
+    dia = "Terça-feira";
+} else if (numero === 4) {
+    dia = "Quarta-feira";
+} else if (numero === 5) {
+    dia = "Quinta-feira";
+} else if (numero === 6) {
+    dia = "Sexta-feira";
+} else if (numero === 7) {
+    dia = "Sábado";
+} else {
+    alert("Número inválido");
+}
+
+if (numero >= 1 && numero <= 7) {
+    alert("O dia correspondente é: " + dia);
+}
+
+    </script>
+</body>
+</html>

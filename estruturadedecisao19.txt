@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+    int main() {
+        float valorEmprestimo, salario, valorParcela;
+        int numParcelas;
+    
+        printf("Digite o valor do emprestimo: ");
+        scanf("%f", &valorEmprestimo);
+    
+        printf("Digite o numero de parcelas: ");
+        scanf("%d", &numParcelas);
+    
+        printf("Digite o salario do solicitante: ");
+        scanf("%f", &salario);
+    
+        valorParcela = valorEmprestimo / numParcelas;
+    
+        if (valorParcela <= 0.3 * salario) {
+            printf("Emprestimo APROVADO!\n");
+            printf("Valor da parcela: R$ %.2f\n", valorParcela);
+        } else {
+            printf("Emprestimo NEGADO.\n");
+            printf("Valor da parcela (R$ %.2f) excede 30%% do salario (R$ %.2f).\n", valorParcela, 0.3 * salario);
+        }
+    
+        return 0;
+    }
+    

@@ -1,0 +1,8 @@
+function calcularRaizCubica(numero) {
+  const raizCubica = Math.cbrt(numero);
+  return raizCubica.toFixed(2);
+}
+
+const numero = parseFloat(prompt("Digite um número:"));
+const resultado = calcularRaizCubica(numero);
+console.log("A raiz cúbica é: " + resultado);

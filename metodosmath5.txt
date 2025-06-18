@@ -1,0 +1,18 @@
+let numeros = [];
+
+for (let i = 0; i < 5; i++) {
+  let numero = parseFloat(prompt(`Digite o ${i + 1}º número:`));
+
+  while (numeros.includes(numero) || isNaN(numero)) {
+    numero = parseFloat(prompt(`Número inválido ou repetido. Digite outro número diferente:`));
+  }
+
+  numeros.push(numero);
+}
+
+const maior = Math.max(...numeros);
+const menor = Math.min(...numeros);
+
+console.log("Números digitados:", numeros);
+console.log("Maior número:", maior);
+console.log("Menor número:", menor);

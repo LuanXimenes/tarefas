@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    float baseCalculo, imposto;
+
+    printf("Digite a base de calculo mensal (apos deducoes) R$ ");
+    scanf("%f", &baseCalculo);
+
+    if (baseCalculo <= 1637.11) {
+        imposto = 0.0;
+    } else if (baseCalculo <= 2453.50) {
+        imposto = baseCalculo * 0.075 - 122.78;
+    } else if (baseCalculo <= 3271.38) {
+        imposto = baseCalculo * 0.15 - 306.80;
+    } else if (baseCalculo <= 4087.65) {
+        imposto = baseCalculo * 0.225 - 552.15;
+    } else {
+        imposto = baseCalculo * 0.275 - 756.53;
+    }
+
+    printf("Imposto de renda devido R$ %.2f\n", imposto);
+
+    return 0;
+}

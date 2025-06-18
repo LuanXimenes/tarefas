@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let sexo = prompt("Digite o sexo (M para masculino ou F para feminino):");
+let estadoCivil = prompt("Digite a letra inicial do estado civil:\nC - Casado\nS - Solteiro\nV - Viúvo\nD - Divorciado\nQ - Desquitado");
+
+let descricao;
+
+if (sexo === "M" || sexo === "m") {
+    if (estadoCivil === "C" || estadoCivil === "c") {
+        descricao = "Casado";
+    } else if (estadoCivil === "S" || estadoCivil === "s") {
+        descricao = "Solteiro";
+    } else if (estadoCivil === "V" || estadoCivil === "v") {
+        descricao = "Viúvo";
+    } else if (estadoCivil === "D" || estadoCivil === "d") {
+        descricao = "Divorciado";
+    } else if (estadoCivil === "Q" || estadoCivil === "q") {
+        descricao = "Desquitado";
+    } else {
+        alert("Estado civil inválido");
+    }
+} else if (sexo === "F" || sexo === "f") {
+    if (estadoCivil === "C" || estadoCivil === "c") {
+        descricao = "Casada";
+    } else if (estadoCivil === "S" || estadoCivil === "s") {
+        descricao = "Solteira";
+    } else if (estadoCivil === "V" || estadoCivil === "v") {
+        descricao = "Viúva";
+    } else if (estadoCivil === "D" || estadoCivil === "d") {
+        descricao = "Divorciada";
+    } else if (estadoCivil === "Q" || estadoCivil === "q") {
+        descricao = "Desquitada";
+    } else {
+        alert("Estado civil inválido");
+    }
+} else {
+    alert("Sexo inválido!");
+}
+
+if (descricao) {
+    alert("Descrição: " + descricao);
+}
+
+    </script>
+</body>
+</html>

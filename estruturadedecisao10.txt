@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let opcao = prompt("Menu de opções:\n1 - Somar dois números\n2 - Multiplicar dois números\n3 - Exponencial de um número por outro\n\nDigite a opção (1, 2 ou 3):");
+
+let num1, num2, resultado;
+
+if (opcao === "1") {
+  num1 = parseFloat(prompt("Digite o primeiro número:"));
+  num2 = parseFloat(prompt("Digite o segundo número:"));
+  resultado = num1 + num2;
+  alert("Resultado da soma: " + resultado);
+} else if (opcao === "2") {
+  num1 = parseFloat(prompt("Digite o primeiro número:"));
+  num2 = parseFloat(prompt("Digite o segundo número:"));
+  resultado = num1 * num2;
+  alert("Resultado da multiplicação: " + resultado);
+} else if (opcao === "3") {
+  num1 = parseFloat(prompt("Digite a base:"));
+  num2 = parseFloat(prompt("Digite o expoente:"));
+  resultado = num1 ** num2;
+  alert("Resultado da exponenciação: " + resultado);
+} else {
+  alert("Opção inválida.");
+}
+
+    </script>
+</body>
+</html>

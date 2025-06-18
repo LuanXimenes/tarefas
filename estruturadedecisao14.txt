@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let mes = parseInt(prompt("Digite um número de 1 a 12 correspondente ao mês "));
+
+let trimestre;
+
+if (mes >= 1 && mes <= 3) {
+    trimestre = "1º trimestre";
+} else if (mes >= 4 && mes <= 6) {
+    trimestre = "2º trimestre";
+} else if (mes >= 7 && mes <= 9) {
+    trimestre = "3º trimestre";
+} else if (mes >= 10 && mes <= 12) {
+    trimestre = "4º trimestre";
+} else {
+    alert("Número inválido");
+}
+
+if (mes >= 1 && mes <= 12) {
+    alert("O mês pertence ao " + trimestre);
+}
+    </script>
+</body>
+</html>
